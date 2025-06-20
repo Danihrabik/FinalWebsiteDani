@@ -4,6 +4,62 @@
     <meta charset="UTF-8">
     <title>Surfing</title>
     <link rel="stylesheet" href="css/scratch-styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f9fa;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 60px 20px 30px;
+            background-color: #00bcd4;
+            color: white;
+        }
+        .header h1 {
+            margin-bottom: 10px;
+            font-size: 2.8rem;
+        }
+        .header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .section {
+            padding: 40px 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        .photo-grid img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        iframe {
+            display: block;
+            margin: 0 auto;
+        }
+        .section a {
+            color: #00bcd4;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        .section a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
 
@@ -33,79 +89,80 @@
         <p>Here are some surfing moments that capture why I love it so much:</p>
         <div class="photo-grid">
             <div>
-                <img src="images/beachfriends.jpeg" alt="Car Camp">
+                <img src="images/beachfriends.jpeg" alt="Car Camp" style="width: 75%; max-width: 700px;" />
                 <p>Spending time with my friends post surf session</p>
             </div>
             <div>
-                <img src="images/shaka.jpeg" alt="New Board" style="width: 60%; max-width: 500px; height: auto; display: block; margin: 20px auto;" />
+                <img src="images/shaka.jpeg" alt="New Board" style="width: 60%; max-width: 500px;" />
                 <p>That feeling when you get a new board</p>
             </div>
             <div>
-                <img src="images/grassboards.jpeg" alt="Calm Beach">
+                <img src="images/grassboards.jpeg" alt="Calm Beach" style="width: 60%; max-width: 500px;" />
                 <p>The peaceful atmosphere of the beach</p>
             </div>
             <div>
-                <img src="images/surfing.jpeg" alt="Sunset Surf">
+                <img src="images/surfing.jpeg" alt="Sunset Surf" style="width: 65%; max-width: 550px;" />
                 <p>Catching waves with friends</p>
             </div>
         </div>
     </div>
 
-   <div class="section">
-    <h2>My Favorite Surf Clip Of 2025</h2>
-    <iframe width="560" height="315" 
-        src="https://www.youtube.com/embed/PbhJgmkW4Wo" 
-        title="Surfing in the Maldives" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        referrerpolicy="strict-origin-when-cross-origin" 
-        allowfullscreen>
-    </iframe>
-</div>
+    <div class="section">
+        <h2>My Favorite Surf Clip Of 2025</h2>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/PbhJgmkW4Wo" 
+            title="Surfing in the Maldives" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+        </iframe>
+    </div>
 
-<h2>Check out these stats of how Americans spend their time!</h2>
-<div class='tableauPlaceholder' id='viz1750369300605' style='position: relative'>
-  <noscript>
-    <a href='#'>
-      <img alt='How americans typically spend their time?' src='https://public.tableau.com/static/images/Ho/HowAmericansspendtheirtime/Howpeoplespendtime/1_rss.png' style='border: none' />
-    </a>
-  </noscript>
-  <object class='tableauViz' style='display:none;'>
-    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
-    <param name='embed_code_version' value='3' />
-    <param name='site_root' value='' />
-    <param name='name' value='HowAmericansspendtheirtime/Howpeoplespendtime' />
-    <param name='tabs' value='no' />
-    <param name='toolbar' value='yes' />
-    <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowAmericansspendtheirtime/Howpeoplespendtime/1.png' />
-    <param name='animate_transition' value='yes' />
-    <param name='display_static_image' value='yes' />
-    <param name='display_spinner' value='yes' />
-    <param name='display_overlay' value='yes' />
-    <param name='display_count' value='yes' />
-    <param name='language' value='en-US' />
-  </object>
-</div>
+    <div class="section">
+        <h2>Check out these stats of how Americans spend their time!</h2>
+        <div class='tableauPlaceholder' id='viz1750369300605' style='position: relative'>
+          <noscript>
+            <a href='#'>
+              <img alt='How americans typically spend their time?' src='https://public.tableau.com/static/images/Ho/HowAmericansspendtheirtime/Howpeoplespendtime/1_rss.png' style='border: none' />
+            </a>
+          </noscript>
+          <object class='tableauViz' style='display:none;'>
+            <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+            <param name='embed_code_version' value='3' />
+            <param name='site_root' value='' />
+            <param name='name' value='HowAmericansspendtheirtime/Howpeoplespendtime' />
+            <param name='tabs' value='no' />
+            <param name='toolbar' value='yes' />
+            <param name='static_image' value='https://public.tableau.com/static/images/Ho/HowAmericansspendtheirtime/Howpeoplespendtime/1.png' />
+            <param name='animate_transition' value='yes' />
+            <param name='display_static_image' value='yes' />
+            <param name='display_spinner' value='yes' />
+            <param name='display_overlay' value='yes' />
+            <param name='display_count' value='yes' />
+            <param name='language' value='en-US' />
+          </object>
+        </div>
+        <script type='text/javascript'>
+          var divElement = document.getElementById('viz1750369300605');
+          var vizElement = divElement.getElementsByTagName('object')[0];
+          vizElement.style.width='100%';
+          vizElement.style.height='991px';
+          var scriptElement = document.createElement('script');
+          scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+          vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+    </div>
 
-<script type='text/javascript'>
-  var divElement = document.getElementById('viz1750369300605');
-  var vizElement = divElement.getElementsByTagName('object')[0];
-  vizElement.style.width='100%';
-  vizElement.style.height='991px';
-  var scriptElement = document.createElement('script');
-  scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
-  vizElement.parentNode.insertBefore(scriptElement, vizElement);
-</script>
+    <div class="section">
+        <h2>🧠 Surfing Personality Quiz</h2>
+        <p><a href="this-or-that.html">Take my fun “This or That” quiz!</a></p>
+    </div>
 
-<div class="section">
-    <h2>🧠 Surfing Personality Quiz</h2>
-    <p><a href="this-or-that.html">Take my fun “This or That” quiz!</a></p>
-</div>
-
-<div class="section">
-    <a href="#top">Back to Top ↑</a> |
-    <a href="index.html">Back to Main Site</a>
-</div>
+    <div class="section">
+        <a href="#top">Back to Top ↑</a> |
+        <a href="index.html">Back to Main Site</a>
+    </div>
 
 </body>
 </html>
