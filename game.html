@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Game</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <title>Riddle Generator</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+      padding: 50px;
+    }
+    .riddle-box {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      background-color: #00bcd4;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0097a7;
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Game Page</h1>
-        <p>This is where my game will go! It’s in progress — come back soon 😄</p>
+  <div class="riddle-box">
+    <h1>🧠 Random Riddle Generator</h1>
+    <p id="riddle">Click the button to get a riddle!</p>
+    <button onclick="showRiddle()">New Riddle</button>
+    <br><br>
+    <a href="index.html">← Back to Home</a>
+  </div>
 
-        <a href="index.html">← Back to Home</a>
-    </div>
+  <script>
+    const riddles = [
+      "What has hands but can't clap? — A clock.",
+      "What has to be broken before you can use it? — An egg.",
+      "I’m tall when I’m young, and I’m short when I’m old. What am I? — A candle.",
+      "What gets wetter the more it dries? — A towel.",
+      "The more of me you take, the more you leave behind. What am I? — Footsteps."
+    ];
+
+    function showRiddle() {
+      const randomIndex = Math.floor(Math.random() * riddles.length);
+      document.getElementById("riddle").innerText = riddles[randomIndex];
+    }
+  </script>
 </body>
 </html>
