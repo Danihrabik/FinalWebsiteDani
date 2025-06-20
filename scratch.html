@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f9fa;
+            background-color: #fdfdfb; /* Off-white */
             color: #333;
         }
         .header {
@@ -65,6 +65,14 @@
         .section a:hover {
             text-decoration: underline;
         }
+        ol, ul {
+            text-align: center;
+            display: inline-block;
+            text-align: left;
+        }
+        .center-text {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -72,27 +80,29 @@
     <a id="top"></a>
 
     <div class="header">
-        <h1>My Hobby: Surfing</h1>
+        <h1>Surfing</h1>
         <p>Surfing isn't just a hobby for me — it's a way to reset and connect with nature</p>
     </div>
 
     <div class="section">
-        <h2>Top Reasons I Love Surfing</h2>
-        <ol>
-            <li>It gets me outdoors
-                <ul>
-                    <li>Sun, ocean water, and sand always brighten my day</li>
-                </ul>
-            </li>
-            <li>It’s a great workout</li>
-            <li>It’s peaceful but thrilling at the same time</li>
-            <li>It brings people together — I’ve made so many beach friends!</li>
-        </ol>
+        <h2>Top Reasons I Love Surfing:</h2>
+        <div class="center-text">
+            <ol>
+                <li>It gets me outdoors
+                    <ul>
+                        <li>Sun, ocean water, and sand always brighten my day</li>
+                    </ul>
+                </li>
+                <li>It’s a great workout</li>
+                <li>It’s peaceful but thrilling at the same time</li>
+                <li>It brings people together — I’ve made so many beach friends!</li>
+            </ol>
+        </div>
     </div>
 
     <div class="section">
         <h2>Surfing in Action</h2>
-        <p>Here are some surfing moments that capture why I love it so much:</p>
+        <p class="center-text">Here are some surfing moments that capture why I love it so much:</p>
         <div class="photo-grid">
             <div>
                 <img src="images/beachfriends.jpeg" alt="Car Camp" style="width: 75%; max-width: 700px;" />
